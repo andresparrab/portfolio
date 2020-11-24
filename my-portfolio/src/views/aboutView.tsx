@@ -11,7 +11,9 @@ const aboutView = () => {
 
                 <div className="profile-content-wrapper">
                     <h1>Hi, thanks for visiting!</h1>
-                    <p>Before today I didn't know anything about html or css. But a few hours later this is what I was able to do</p>
+                    <p>"Programming isn't about what you know; it's about what you can figure out.” - Chris Pine
+
+                        <br /> <br />This is so true. At first, we're so anxious about knowing everything, especially language syntax. Problem-solving is the skill we end up using most.</p>
                     <p>“While one may encounter many defeats, one must not be defeated.”
                     ― Maya Angelou
                          </p>

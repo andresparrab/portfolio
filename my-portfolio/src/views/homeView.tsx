@@ -75,7 +75,7 @@ const HomeView = () => {
                             <div className='logo-wrapper'>
                                 <img src={crondose} alt='logo' />
                             </div>
-                            <div className='subtitle'>and css 2020-10-13 sfgsf sdfgsdfg sdfgsdfg</div>
+                            <div className='subtitle'>More projects to come</div>
                         </div>
                     </div>
                     <div className='portfolio-item-wrapper'>
@@ -85,7 +85,7 @@ const HomeView = () => {
                             <div className='logo-wrapper'>
                                 <img src={crondose} alt='logo' />
                             </div>
-                            <div className='subtitle'>and css 2020-10-13 sfgsf sdfgsdfg sdfgsdfg</div>
+                            <div className='subtitle'>More projects to come</div>
                         </div>
                     </div>
                     <div className='portfolio-item-wrapper'>
@@ -95,7 +95,7 @@ const HomeView = () => {
                             <div className='logo-wrapper'>
                                 <img src={crondose} alt='logo' />
                             </div>
-                            <div className='subtitle'>and css 2020-10-13 sfgsf sdfgsdfg sdfgsdfg</div>
+                            <div className='subtitle'>More projects to come</div>
                         </div>
                     </div>
                 </div>
