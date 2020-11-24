@@ -1,0 +1,67 @@
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: blueviolet;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*Aligh left to right*/
+  align-items: center; /*Aligh top to bottom*/
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  opacity: 0;
+}
+.image-text-wrapper:hover {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.logo-wrapper .cinema {
+  filter: invert(100%);
+  width: 30%;
+  margin-bottom: 20px;
+}
+.logo-wrapper .exercise {
+  filter: invert(100%);
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.logo-wrapper .amazon {
+  filter: invert(100%);
+  width: 30%;
+  margin-bottom: 20px;
+}
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-weight: 600;
+
+  color: teal;
+}
+
+/*We want the backgroun imga to darken, we will use this with help of javascript*/
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}

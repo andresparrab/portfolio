@@ -1,0 +1,51 @@
+body {
+  font-family: 'Lato';
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a                 /* "a" is to take the first "a" to do something i this case a href*/ {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover  /*hover proprieties for the div*/ {
+  border-bottom: 1px solid black; /* Add a black line under the text when hover */
+}
+
+.nav-link-wrapper a:hover /* Hover porpeties for the link "a" is to take the first "a" to do something i this case a href*/ {
+  color: turquoise; /* Change the text color to black when hover */
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+.active-nav-link a {
+  color: black !important;
+}

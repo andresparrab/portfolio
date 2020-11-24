@@ -1,0 +1,11 @@
+npm install -g firebase-tools   
+firebase login 
+firebase init  
+        Here choose hosting/existing setup/ then write build
+
+
+then npm run build
+firebase deploy
+
+
+DONE!!!!
