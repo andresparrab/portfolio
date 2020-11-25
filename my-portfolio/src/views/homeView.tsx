@@ -31,6 +31,7 @@ const HomeView = () => {
 
     const netflix = () => (window.location.href = 'https://netflix-clone-5966a.web.app');
     const amazon = () => (window.location.href = "https://challange-2befc.web.app/")
+    const exerciseLink = () => (window.location.href = "http://localhost:3000")              // HOW CAN I GET THIS TO WORK WITH ROUTER!!
 
     return (
         <div>
@@ -60,12 +61,13 @@ const HomeView = () => {
                     <div className='portfolio-item-wrapper'>
                         <div className='portfolio-img-background' style={{ backgroundImage: `url("${image3}")` }}></div>
 
-                        <div className='image-text-wrapper'>
+                        <div className='image-text-wrapper' onClick={exerciseLink}>
                             <div className='logo-wrapper'>
                                 <img className="exercise" src={exercise} alt='logo' />
                             </div>
                             <div className='subtitle'>Exercise tracker (Fullstack)</div>
                         </div>
+
                     </div>
 
                     <div className='portfolio-item-wrapper'>

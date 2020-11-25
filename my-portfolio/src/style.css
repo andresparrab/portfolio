@@ -135,7 +135,7 @@ body
     /*color: teal;*/
 }
 
-/*We want the backgroun imga to darken, we will use this with help of javascript*/
+/*We want the backgroun img to darken, we will use this with help of javascript*/
 .img-darken
 {
     transition: 1s;

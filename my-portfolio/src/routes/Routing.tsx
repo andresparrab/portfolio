@@ -15,9 +15,11 @@ const Routing = (props: any) => {
                 <Route exact path={RoutingPath.aboutView} component={About}></Route>
                 <Route component={HomeView} />
                 <Route exact path={RoutingPath.NetflixView}>
-                    <Redirect to="https://netflix-clone-5966a.web.app" />
+                    <Redirect to="https://netflix-clone-5966a.web.app" />   // NOT WORKING!!!!
                 </Route>
-
+                <Route exact path={RoutingPath.exersiceView}  >
+                    <Redirect to="http://localhost:3000/" />
+                </Route>
             </Switch>
         </Router>
     )
