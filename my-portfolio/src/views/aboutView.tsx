@@ -1,16 +1,16 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import "./aboutView.css";
 import Skills from "../components/Skills/Skills";
 import profile from "../images/profile02.jpg";
-import { isImportOrExportSpecifier } from "typescript";
+//import { isImportOrExportSpecifier } from "typescript";
 const aboutView = () => {
   return (
     <div className='content-wrapper'>
-      {" "}
       {/*<!-- This is where everythin below the navbar is going to be-->*/}
       <div className='two-column-wrapper'>
         <div className='profile-image-wrapper'>
-          <img src={profile} />
+          <img src={profile} alt='imgd' />
         </div>
 
         <div className='profile-content-wrapper'>

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "../views/aboutView";
 import HomeView from "../views/homeView";
 import RoutingPath from "./RoutingPath";
-import { Redirect } from "react-router-dom";
+//import { Redirect } from "react-router-dom";
 
 const Routing = (props: any) => {
   const mongo = "hello";
