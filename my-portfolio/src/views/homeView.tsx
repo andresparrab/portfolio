@@ -36,68 +36,68 @@ const HomeView = () => {
 
   return (
     <div>
-      <div className='content-wrapper'>
-        <div ref={portfolioItems} className='portfolio-items-wrapper'>
-          <div className='portfolio-item-wrapper'>
-            <div className='portfolio-img-background' style={{ backgroundImage: `url("${image1}")` }}></div>
+      <div className="content-wrapper">
+        <div ref={portfolioItems} className="portfolio-items-wrapper">
+          <div className="portfolio-item-wrapper">
+            <div className="portfolio-img-background" style={{ backgroundImage: `url("${image1}")` }}></div>
 
-            <div className='image-text-wrapper' onClick={netflix}>
-              <div className='logo-wrapper'>
-                <img className='cinema' src={cinema} alt='logo' />
+            <div className="image-text-wrapper" onClick={netflix}>
+              <div className="logo-wrapper">
+                <img className="cinema" src={cinema} alt="logo" />
               </div>
-              <div className='subtitle'>Netflix-project(frontend)</div>
+              <div className="subtitle">Netflix-project(frontend)</div>
             </div>
           </div>
 
-          <div className='portfolio-item-wrapper'>
-            <div className='portfolio-img-background' style={{ backgroundImage: `url("${image2}")` }}></div>
+          <div className="portfolio-item-wrapper">
+            <div className="portfolio-img-background" style={{ backgroundImage: `url("${image2}")` }}></div>
 
-            <div className='image-text-wrapper' onClick={amazon}>
-              <div className='logo-wrapper'>
-                <img className='amazon' src={shop} alt='logo' />
+            <div className="image-text-wrapper" onClick={amazon}>
+              <div className="logo-wrapper">
+                <img className="amazon" src={shop} alt="logo" />
               </div>
-              <div className='subtitle'>Amazon-clone project (Fullstack)</div>
+              <div className="subtitle">Amazon-clone project (Fullstack)</div>
             </div>
           </div>
-          <div className='portfolio-item-wrapper'>
-            <div className='portfolio-img-background' style={{ backgroundImage: `url("${image3}")` }}></div>
+          <div className="portfolio-item-wrapper">
+            <div className="portfolio-img-background" style={{ backgroundImage: `url("${image3}")` }}></div>
 
-            <div className='image-text-wrapper' onClick={exerciseLink}>
-              <div className='logo-wrapper'>
-                <img className='exercise' src={exercise} alt='logo' />
+            <div className="image-text-wrapper" onClick={exerciseLink}>
+              <div className="logo-wrapper">
+                <img className="exercise" src={exercise} alt="logo" />
               </div>
-              <div className='subtitle'>Exercise tracker (Fullstack)</div>
+              <div className="subtitle">Exercise tracker (Fullstack)</div>
             </div>
           </div>
 
-          <div className='portfolio-item-wrapper'>
-            <div className='portfolio-img-background' style={{ backgroundImage: `url("${image4}")` }}></div>
+          <div className="portfolio-item-wrapper">
+            <div className="portfolio-img-background" style={{ backgroundImage: `url("${image4}")` }}></div>
 
-            <div className='image-text-wrapper'>
-              <div className='logo-wrapper'>
-                <img src={crondose} alt='logo' />
+            <div className="image-text-wrapper">
+              <div className="logo-wrapper">
+                <img src={crondose} alt="logo" />
               </div>
-              <div className='subtitle'>More projects to come</div>
+              <div className="subtitle">More projects to come</div>
             </div>
           </div>
-          <div className='portfolio-item-wrapper'>
-            <div className='portfolio-img-background' style={{ backgroundImage: `url("${image4}")` }}></div>
+          <div className="portfolio-item-wrapper">
+            <div className="portfolio-img-background" style={{ backgroundImage: `url("${image4}")` }}></div>
 
-            <div className='image-text-wrapper'>
-              <div className='logo-wrapper'>
-                <img src={crondose} alt='logo' />
+            <div className="image-text-wrapper">
+              <div className="logo-wrapper">
+                <img src={crondose} alt="logo" />
               </div>
-              <div className='subtitle'>More projects to come</div>
+              <div className="subtitle">More projects to come</div>
             </div>
           </div>
-          <div className='portfolio-item-wrapper'>
-            <div className='portfolio-img-background' style={{ backgroundImage: `url("${image4}")` }}></div>
+          <div className="portfolio-item-wrapper">
+            <div className="portfolio-img-background" style={{ backgroundImage: `url("${image4}")` }}></div>
 
-            <div className='image-text-wrapper'>
-              <div className='logo-wrapper'>
-                <img src={crondose} alt='logo' />
+            <div className="image-text-wrapper">
+              <div className="logo-wrapper">
+                <img src={crondose} alt="logo" />
               </div>
-              <div className='subtitle'>More projects to come</div>
+              <div className="subtitle">More projects to come</div>
             </div>
           </div>
         </div>
