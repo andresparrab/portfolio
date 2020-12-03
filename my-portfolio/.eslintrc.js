@@ -1,70 +1,48 @@
+// .eslintrc.js
 module.exports = {
   root: true,
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
-    'plugin:@typescript-eslint/eslint-recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-    'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-    'prettier/@typescript-eslint', // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
-    'plugin:prettier/recommended',  
-],
-  parser: '@typescript-eslint/parser', // Specifies the ESLint parser
   env: {
-    browser: true,
+    node: true,
     es6: true,
-    jest: true,
   },
-  parserOptions: {
-    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module', // Allows for the use of imports
-    ecmaFeatures: {
-      jsx: true, // Allows for the parsing of JSX
-      arrowFunctions: true,
-    },
-  },
-  plugins: ['react', '@typescript-eslint', 'prettier', 'spellcheck'],
-  settings: {
-    react: {
-      version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
-    },
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        paths: ['./src'],
+  parserOptions: { ecmaVersion: 8 }, // to enable features such as async/await
+  ignorePatterns: ['node_modules/*', '.next/*', '.out/*', '!.prettierrc.js'], // We don't want to lint generated files nor node_modules, but we want to lint .prettierrc.js (ignored by default by eslint)
+  extends: ['eslint:recommended'],
+  overrides: [
+    // This configuration will apply only to TypeScript files
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+      settings: { react: { version: 'detect' } },
+      env: {
+        browser: true,
+        node: true,
+        es6: true,
       },
-    },
-  },
-  rules: {
-    'spellcheck/spell-checker': [
-      1,
-      {
-        comments: false,
-        strings: true,
-        identifiers: false,
-        lang: 'en_US',
-        skipWords: ['dict', 'aff', 'hunspellchecker', 'hunspell', 'utils', 'aws'],
-        skipIfMatch: [
-          'http://[^s]*',
-          '^[-\\w]+/[-\\w\\.]+$', // For MIME Types
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended', // TypeScript rules
+        'plugin:react/recommended', // React rules
+        'plugin:react-hooks/recommended', // React hooks rules
+        'plugin:jsx-a11y/recommended', // Accessibility rules
+        'prettier/@typescript-eslint', // Prettier plugin
+        'plugin:prettier/recommended', // Prettier recommended rules 
+      ],
+      rules: {
+        'react/prop-types': 'off', // We will use TypeScript's types for component props instead
+        'react/react-in-jsx-scope': 'on', // No need to import React when using Next.js
+        'jsx-a11y/anchor-is-valid': 'on', // This rule is not compatible with Next.js's <Link /> components
+        '@typescript-eslint/no-unused-vars': ['error'], // Why would you want unused vars?
+        '@typescript-eslint/explicit-function-return-type': [ // I suggest this setting for requiring return types on functions only where usefull
+          'warn',
+          {
+            allowExpressions: true,
+            allowConciseArrowFunctionExpressionsStartingWithVoid: true,
+          },
         ],
-        skipWordIfMatch: [
-          '^foobar.*$', // words that begin with foobar will not be checked
-        ],
-        minLength: 3,
-      },
-    ],
-    // Existing rules
-    'comma-dangle': 'off', // https://eslint.org/docs/rules/comma-dangle
-    'function-paren-newline': 'off', // https://eslint.org/docs/rules/function-paren-newline
-    'global-require': 'off', // https://eslint.org/docs/rules/global-require
-    'import/no-dynamic-require': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
-    'no-inner-declarations': 'off', // https://eslint.org/docs/rules/no-inner-declarations
+        'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Includes .prettierrc.js rules
 
-    // New rules
-    'class-methods-use-this': 'off',
-    'import/extensions': 'off',
-    'import/prefer-default-export': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-var-requires': 'off',
-  },
+      },
+    },
+  ],
 };
