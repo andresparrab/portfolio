@@ -1,4 +1,5 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
+// /* eslint-disable jsx-a11y/click-events-have-key-events */
+// /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useEffect, useRef } from "react";
 import "./homeView.css";
 import image1 from "../images/video.jpg";
