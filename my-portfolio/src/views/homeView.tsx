@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useEffect, useRef } from "react";
 import "./homeView.css";
 import image1 from "../images/video.jpg";
