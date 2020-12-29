@@ -10,6 +10,13 @@ import shop from "../images/logos/shop.png";
 import crondose from "../images/logos/crondose.png";
 import cinema from "../images/logos/cinema.png";
 import exercise from "../images/logos/exercise.png";
+import react from "../images/skills/react.png";
+import css from "../images/skills/css.png";
+import html from "../images/skills/html.png";
+import firebase from "../images/skills/firebase.png";
+import mongodb from "../images/skills/mongodb.png";
+import stripe from "../images/skills/stripe.png";
+import express from "../images/skills/express.png";
 
 const HomeView = () => {
   const portfolioItems: React.MutableRefObject<any> = useRef();
@@ -36,6 +43,9 @@ const HomeView = () => {
 
   return (
     <div>
+      <div className="title">
+        <h1>Projects</h1>
+      </div>
       <div className="content-wrapper">
         <div ref={portfolioItems} className="portfolio-items-wrapper">
           <div className="portfolio-item-wrapper">
@@ -46,6 +56,11 @@ const HomeView = () => {
                 <img className="cinema" src={cinema} alt="logo" />
               </div>
               <div className="subtitle">Netflix-project(frontend)</div>
+              <div className="skimg">
+                <img src={html} />
+                <img src={css} />
+                <img src={react} />
+              </div>
             </div>
           </div>
 
@@ -56,7 +71,15 @@ const HomeView = () => {
               <div className="logo-wrapper">
                 <img className="amazon" src={shop} alt="logo" />
               </div>
-              <div className="subtitle">Amazon-clone project (Fullstack)</div>
+              <div className="subtitle">Ashop project (Fullstack)</div>
+              <div className="skimg">
+                <img src={html} />
+                <img src={css} />
+                <img src={react} />
+                <img src={firebase} />
+                <img src={mongodb} />
+                <img src={stripe} />
+              </div>
             </div>
           </div>
           <div className="portfolio-item-wrapper">
@@ -67,6 +90,14 @@ const HomeView = () => {
                 <img className="exercise" src={exercise} alt="logo" />
               </div>
               <div className="subtitle">Exercise tracker (Fullstack)</div>
+              <div className="skimg">
+                <img src={html} />
+                <img src={css} />
+                <img src={react} />
+                <img src={firebase} />
+                <img src={mongodb} />
+                <img src={express} className="express" />
+              </div>
             </div>
           </div>
 

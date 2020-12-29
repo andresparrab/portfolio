@@ -17,6 +17,8 @@ const aboutView = () => {
           <h1>Hi, thanks for visiting!</h1>
           <p>
             "Programming isn't about what you know, it's about what you can figure out.” - Chris Pine <br />
+          </p>
+          <p>
             Self-taught software developer. Passionate about everything in technology, programming, personal development
             and cooking.
           </p>

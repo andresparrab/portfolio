@@ -1,3 +1,9 @@
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: darkgray;
+  margin-bottom: 20px;
+}
 .portfolio-items-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -32,7 +38,15 @@
   opacity: 1;
   transition: opacity 2s;
 }
-
+.skimg img {
+  padding-left: 10px;
+  margin-top: 10px;
+  display: flexbox;
+  max-height: 30px;
+}
+.express {
+  filter: invert();
+}
 .logo-wrapper .cinema {
   filter: invert(100%);
   width: 30%;
